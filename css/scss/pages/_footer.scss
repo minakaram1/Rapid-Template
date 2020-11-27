@@ -1,0 +1,225 @@
+// Start Styling The Website Footer
+footer {
+  background-color: $light-green;
+
+  .footer-boxs {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    .footer-box-text {
+      display: flex;
+      flex-wrap: wrap;
+      .footer-box {
+        margin-bottom: 20px;
+        flex-basis: 100%;
+
+        &:nth-of-type(2){
+          @media (min-width: 576px) {
+            order: 3;
+          }
+        }
+        &:first-of-type {
+          p {
+            margin-bottom: 0;
+            line-height: 1.8em;
+          }
+        }
+        &:last-of-type {
+          p {
+            margin-bottom: 0;
+          }
+          @media (min-width: 576px) {
+            order: 4;
+          }
+        }
+
+        h2 {
+          font: {
+            size: 34px;
+            weight: 400;
+          }
+
+          color: $dark-blue3;
+          line-height: 1.5em;
+          margin-bottom: 10px;
+        }
+
+        .rapid-para {
+          font-size: 13px;
+          color: $dark-blue;
+          line-height: 1.5em;
+        }
+
+        p {
+          color: $black;
+          line-height: 1.5em;
+          margin-bottom: 20px;
+
+          span {
+            font-weight: 700;
+          }
+        }
+
+        h3 {
+          color: $dark-blue3;
+          line-height: 1.5em;
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+
+        .footer-box-input {
+          input {
+            padding: 6px 8px;
+            border: 1px solid $light-gray4;
+            width: 65%;
+          }
+
+          a {
+            border: 1px solid $blue;
+            background-color: $blue;
+            color: $white;
+            padding: 6px 0;
+            text-align: center;
+            display: inline-block;
+            width: 35%;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              background-color: $blue2;
+            }
+          }
+        }
+
+        a {
+          display: block;
+          color: $gray;
+          transition: all 0.3s ease-in-out;
+
+          &:not(:last-of-type) {
+            margin-bottom: 20px;
+          }
+
+          &:hover {
+            color: $blue;
+          }
+        }
+        .footer-box-icons{
+          display: flex;
+          margin-top: 20px;
+          .footer-box-icon {
+            a {
+              display: block;
+              height: 36px;
+              width: 36px;
+              border-radius: 50%;
+              background-color: $blue;
+              color: $white;
+              font-size: 18px;
+              margin-right: 5px;
+              text-align: center;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                background-color: $blue2;
+              }
+              svg {
+                margin-top: 8px;
+              }
+            }
+          }
+        }
+        @media (min-width: 576px) {
+          flex-basis: 48%;
+        }
+      }
+      @media (min-width: 576px) {
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      @media (min-width: 992px) {
+        flex-basis: 48%;
+      }
+    }
+
+    .footer-box-form {
+      margin-top: 10px;
+      .footer-box {
+        h3 {
+          color: $dark-blue3;
+          line-height: 1.5em;
+          font-size: 14px;
+        }
+
+        p {
+          margin: 20px 0;
+          color: $black;
+          line-height: 1.5em;
+        }
+
+        input {
+          width: 100%;
+          padding: 6px 8px;
+          line-height: 1.5em;
+          border: 1px solid $light-gray4;
+          margin-bottom: 15px;
+        }
+
+        textarea {
+          width: 100%;
+          padding: 6px 8px;
+          line-height: 1.5em;
+          border: 1px solid $light-gray4;
+          margin-bottom: 15px;
+          resize: vertical;
+          min-height: 120px;
+          max-height: 150px;
+        }
+
+        a {
+            border: 1px solid $blue;
+            background-color: $blue;
+            color: $white;
+            margin: auto;
+            border-radius: 3px;
+            padding: 8px 30px;
+            text-align: center;
+            display: block;
+            width: fit-content;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              background-color: $blue2;
+            }
+        }
+      }
+      @media (min-width: 992px) {
+        flex-basis: 48%;
+        margin-top: 0;
+      }
+    }
+    @media (min-width: 992px) {
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  .footer-copyrights {
+    background-color: $white;
+    padding: 30px 0;
+
+    p {
+      text-align: center;
+      color: $dark-blue;
+      line-height: 1.5em;
+      font-size: 15px;
+      &:first-of-type{
+        margin-bottom: 5px;
+      }
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// Finish Styling The Website Footer

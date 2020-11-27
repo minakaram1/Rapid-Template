@@ -1,0 +1,1075 @@
+// Start Styling The About Us Section
+section.about {
+  padding: 100px 0 50px;
+
+  .about-boxs {
+    display: flex;
+    flex-wrap: wrap;
+
+    .about-box {
+      flex-basis: 95%;
+      margin: auto;
+
+      &:first-of-type {
+        margin: 0 auto 100px;
+        position: relative;
+        flex-basis: 80%;
+
+        &:hover {
+          img {
+            transform: scale(1.03);
+          }
+        }
+
+        &::before {
+          content: "";
+          width: 90%;
+          height: 92%;
+          background: $light-gray;
+          display: block;
+          position: absolute;
+          left: -30px;
+          top: -30px;
+          z-index: -1;
+        }
+
+        &::after {
+          content: "";
+          width: 90%;
+          height: 92%;
+          background: $light-gray;
+          display: block;
+          position: absolute;
+          right: -30px;
+          bottom: -30px;
+          z-index: -1;
+        }
+
+        img {
+          border: 8px solid $white;
+          transition: all 0.4s ease-in-out;
+        }
+
+        @media (min-width: 768px) {
+          margin: 0 0 0 30px;
+          flex-basis: 40%;
+          height: fit-content;
+        }
+
+        @media (min-width: 992px) {
+          flex-basis: 35%;
+        }
+      }
+
+      .about-box-text {
+        h2 {
+          color: $dark-blue3;
+          font-size: 31px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 1.5em;
+          margin-bottom: 20px;
+          color: $black;
+
+          &.italic-para {
+            font: {
+              style: italic;
+              size: 22px;
+            }
+
+            color: $gray;
+          }
+        }
+      }
+
+      ul {
+        li {
+          margin-bottom: 20px;
+
+          svg {
+            fill: $blue;
+            width: 20px;
+            margin-right: 5px;
+            vertical-align: top;
+          }
+
+          p {
+            width: calc(100% - 30px);
+            color: $black;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 1.5em;
+          }
+        }
+      }
+
+      @media (min-width: 768px) {
+        margin: 0;
+        flex-basis: 48%;
+      }
+
+      @media (min-width: 992px) {
+        flex-basis: 55%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    padding: 100px 0;
+  }
+}
+
+// Finish Styling The About Us Section
+// Start Styling The Services Section
+section.services {
+  background-color: $light-green;
+  padding-top: 60px;
+
+  .services-boxs {
+    display: flex;
+    flex-wrap: wrap;
+
+    .services-box {
+      flex-basis: 90%;
+      background-color: $white;
+      box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+      border-radius: 10px;
+      padding: 30px;
+      margin: 0 auto 40px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+
+        .services-box-text {
+          a {
+            color: $blue;
+          }
+        }
+      }
+
+      &:first-of-type {
+        .services-box-icon {
+          background-color: $light-pink;
+
+          svg {
+            fill: $pink;
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        .services-box-icon {
+          background-color: $light-pink;
+
+          svg {
+            fill: $orange;
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        .services-box-icon {
+          background-color: $light-blue;
+
+          svg {
+            fill: $blue4;
+          }
+        }
+      }
+
+      &:nth-of-type(4) {
+        .services-box-icon {
+          background-color: $light-green2;
+
+          svg {
+            fill: $green;
+          }
+        }
+      }
+
+      &:nth-of-type(5) {
+        .services-box-icon {
+          background-color: $light-blue2;
+
+          svg {
+            fill: $blue5;
+          }
+        }
+      }
+
+      &:last-of-type {
+        .services-box-icon {
+          background-color: $light-gray2;
+
+          svg {
+            fill: none;
+            stroke: $purple;
+            stroke-linecap: round;
+            stroke-width: 2;
+          }
+        }
+      }
+
+      .services-box-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+
+        svg {
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          margin: 10px 0 0 10px;
+        }
+      }
+
+      .services-box-text {
+        a {
+          text-align: center;
+
+          font: {
+            size: 18px;
+            weight: 700;
+          }
+
+          margin-bottom: 15px;
+          color: $black2;
+          display: block;
+        }
+
+        p {
+          color: $black;
+          line-height: 1.5em;
+          font-size: 15px;
+
+        }
+      }
+
+      @media (min-width: 576px) {
+        flex-basis: 65%;
+      }
+
+      @media (min-width: 768px) {
+        flex-basis: 47%;
+        margin: 0 0 40px;
+      }
+
+      @media (min-width: 992px) {
+        flex-basis: 30%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+}
+
+// Finish Styling The Services Section
+// Start Styling The Choose Us Section
+.choose {
+  padding: 50px 0;
+
+  .title {
+    width: 91%;
+    margin: auto;
+
+    p {
+      @media (min-width: 1200px) {
+        width: 60%;
+      }
+    }
+  }
+
+  .choose-boxs {
+    display: flex;
+    flex-wrap: wrap;
+
+    .choose-box {
+      flex-basis: 90%;
+      margin: 0 auto 30px;
+
+      p {
+        margin-bottom: 30px;
+        color: $black;
+        line-height: 1.5em;
+        font-size: 15px;
+      }
+
+      .choose-box-icons {
+        .choose-box-icon {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          &:nth-of-type(2) {
+            .choose-icon {
+
+              svg {
+                color: $orange2;
+              }
+
+              @media (min-width: 768px) {
+                margin-top: 8px;
+              }
+            }
+          }
+
+          &:last-of-type {
+            .choose-icon {
+
+              svg {
+                color: $blue6;
+              }
+
+              @media (min-width: 768px) {
+                margin-top: 8px;
+              }
+            }
+          }
+
+          .choose-icon {
+            margin: auto;
+
+            svg {
+              color: $pink2;
+              font-size: 40px;
+            }
+
+            @media (min-width: 768px) {
+              flex-basis: 50px;
+              margin: 13px 0 0 0;
+            }
+          }
+
+          .choose-text {
+            flex-basis: 95%;
+            text-align: center;
+            margin-top: 15px;
+
+            h3 {
+              font: {
+                size: 24px;
+                weight: 600;
+              }
+
+              line-height: 2em;
+              color: $dark-blue3;
+            }
+
+            @media (min-width: 768px) {
+              text-align: left;
+              margin-top: 0;
+              flex-basis: calc(100% - 65px);
+            }
+          }
+        }
+      }
+
+      @media (min-width: 992px) {
+        flex-basis: 48%;
+        margin: 0;
+      }
+    }
+
+    @media (min-width: 992px) {
+      justify-content: space-around;
+    }
+  }
+}
+
+// Finish Styling The Choose Us Section
+// Finish Styling The Clients Section
+.clients {
+  padding-bottom: 20px;
+
+  .clients-boxs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .clients-box {
+      flex-basis: 48%;
+      text-align: center;
+      margin-bottom: 30px;
+
+      span {
+        color: $dark-blue4;
+
+        font: {
+          size: 48px;
+          weight: 700;
+        }
+      }
+
+      p {
+        color: $gray2;
+      }
+
+      @media (min-width: 992px) {
+        flex-basis: 24%;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding-bottom: 50px;
+  }
+}
+
+// Finish Styling The Clients Section
+// Start Styling The Call Section
+.call {
+  background-color: $dark-blue5;
+  padding: 50px 0;
+  color: $white;
+  text-align: center;
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .call-boxs {
+    display: flex;
+    flex-wrap: wrap;
+
+    .call-box {
+      margin: auto;
+
+      &:first-of-type {
+        @media (min-width: 992px) {
+          flex-basis: 75%;
+        }
+      }
+
+      p {
+        margin-bottom: 30px;
+        line-height: 1.5em;
+        font-size: 16px;
+
+        @media (min-width: 992px) {
+          margin-bottom: 0;
+        }
+      }
+
+      a {
+        color: $white;
+
+        font: {
+          size: 16px;
+          weight: 700;
+        }
+
+        letter-spacing: 1px;
+        border: 3px solid $white;
+        border-radius: 3px;
+        padding: 10px 25px;
+        display: inline-block;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $blue;
+          border: 3px solid $blue;
+        }
+      }
+
+      @media (min-width: 992px) {
+        margin: 0;
+        flex-basis: 20%;
+      }
+    }
+
+    @media (min-width: 992px) {
+      justify-content: space-between;
+    }
+  }
+
+  @media (min-width: 992px) {
+    text-align: left;
+  }
+}
+
+// Finish Styling The Call Section
+// Start Styling The Features Section
+.features {
+  padding: 50px 0;
+
+  .features-boxs {
+    display: flex;
+    flex-wrap: wrap;
+
+    .features-box {
+      flex-basis: 100%;
+
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+
+        @media (min-width: 992px) {
+          margin-bottom: 0;
+        }
+      }
+
+      &:nth-of-type(3) {
+        @media (min-width: 992px) {
+          order: 4;
+          margin-top: 50px;
+        }
+      }
+
+      &:nth-of-type(4) {
+        @media (min-width: 992px) {
+          order: 3;
+          margin-top: 50px;
+        }
+      }
+
+      h2 {
+        color: $black;
+        margin-bottom: 20px;
+
+        font: {
+          weight: 600;
+          size: 24px;
+        }
+      }
+
+      p {
+        line-height: 1.5em;
+        font-size: 16px;
+        color: $black;
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: 992px) {
+        flex-basis: 48%;
+      }
+    }
+
+    @media (min-width: 992px) {
+      justify-content: space-between;
+    }
+  }
+
+  @media (min-width: 992px) {
+    padding: 80px 0 50px;
+  }
+}
+
+// Finish Styling The Features Section
+// Start Styling The Portfolio Section
+section.portfolio {
+  padding: 50px 0;
+  background-color: $light-green;
+
+  .title {
+    .title-links {
+      margin: 50px auto;
+      width: fit-content;
+
+      a {
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+
+        &:not(:last-of-type) {
+          margin-right: 30px;
+        }
+
+        &.active {
+          color: $blue;
+        }
+
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  .portfolio-boxs {
+    .grid-item {
+      width: 100%;
+
+      @media (min-width: 768px) {
+        width: 47%;
+      }
+
+      @media (min-width: 992px) {
+        width: 31%;
+      }
+    }
+
+    .portfolio-box {
+      position: relative;
+      margin-bottom: 30px;
+
+      &:hover {
+        .portfolio-box-text {
+          display: block;
+        }
+
+        .portfolio-overlay {
+          opacity: 0.4;
+        }
+      }
+
+      .portfolio-overlay {
+        background-color: $black3;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease-in-out;
+        display: block;
+      }
+
+      .portfolio-box-text {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+
+        .portfolio-text {
+          color: $white;
+          text-align: center;
+
+          a {
+            color: $white;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 1.5em;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              color: $blue;
+            }
+          }
+        }
+
+        .portfolio-icons {
+          display: flex;
+
+          .portfolio-icon {
+            width: 40px;
+            height: 40px;
+            background-color: $blue;
+            border-radius: 50%;
+            margin-top: 15px;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:first-of-type {
+              margin-right: 15px;
+            }
+
+            &:hover {
+              background-color: $blue3;
+            }
+
+            svg {
+              color: $white;
+              fill: $white;
+              width: 56%;
+              display: block;
+              margin: 9px auto 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Finish Styling The Portfolio Section
+// Start Styling The Portfolio Section
+.testimonials {
+  padding: 50px 0;
+
+  .testimonials-boxs {
+    margin-top: 40px;
+
+    .swiper-container {
+      .swiper-wrapper {
+        .swiper-slide {
+          .testimonials-box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 50px;
+
+            .testimonials-box-image {
+              margin: auto;
+              width: fit-content;
+
+              img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+              }
+
+              @media (min-width: 768px) {
+                flex-basis: 20%;
+                margin: 0;
+              }
+            }
+
+            .testimonials-box-text {
+              margin-top: 20px;
+              text-align: center;
+
+              h3 {
+                font-size: 20px;
+                line-height: 1.5em;
+                color: $black2;
+              }
+
+              span {
+                color: $gray3;
+                line-height: 1.5em;
+              }
+
+              p {
+                font: {
+                  size: 15px;
+                  weight: 500;
+                  style: italic;
+                }
+
+                color: $black;
+                line-height: 1.5em;
+                margin-top: 15px;
+              }
+
+              @media (min-width: 768px) {
+                flex-basis: 79%;
+                text-align: left;
+                margin-top: 0;
+              }
+            }
+
+            @media (min-width: 768px) {
+              justify-content: space-between;
+              align-items: flex-start;
+            }
+          }
+        }
+      }
+
+      .swiper-pagination {
+        span {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+
+    @media (min-width: 992px) {
+      width: 70%;
+      margin: 40px auto 0;
+    }
+
+    @media (min-width: 1200px) {
+      width: 65%;
+    }
+  }
+}
+
+// Finish Styling The Portfolio Section
+// Start Styling The Team Section
+section.team {
+  background-color: $light-green;
+  padding: 60px 0;
+
+  .team-boxs {
+    display: flex;
+    flex-wrap: wrap;
+
+    .team-box {
+      position: relative;
+      margin-bottom: 20px;
+      overflow: hidden;
+
+      &:hover {
+        .team-box-text {
+          bottom: 0;
+        }
+      }
+
+      .team-box-text {
+        position: absolute;
+        left: 0;
+        bottom: -37px;
+        right: 0;
+        background-color: rgba(29, 28, 41, 0.6);
+        color: $white;
+        text-align: center;
+        padding: 15px 0;
+        transition: all 0.3s ease-in-out;
+
+        h3 {
+          font-size: 18px;
+          line-height: 1.5em;
+        }
+
+        p {
+          font-style: italic;
+          line-height: 1.5em;
+        }
+
+        .team-box-icons {
+          margin-top: 15px;
+
+          a {
+            color: $white;
+            font-size: 18px;
+            margin: 0 5px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              color: $blue;
+            }
+
+            svg {}
+
+          }
+        }
+      }
+
+      @media (min-width: 768px) {
+        flex-basis: 48%;
+      }
+
+      @media (min-width: 992px) {
+        flex-basis: 23%;
+        margin-bottom: 0;
+      }
+    }
+
+    @media (min-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+}
+
+// Finish Styling The Team Section
+// Start Styling The Clients Swiper Section
+.clients-swiper {
+  padding: 50px 0;
+
+  .clients-swiper-boxs {
+    .swiper-container2 {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      overflow: hidden;
+      list-style: none;
+      padding: 0;
+      z-index: 1;
+
+      .swiper-wrapper {
+        .swiper-slide {
+          .clients-swiper-box {
+            margin-bottom: 50px;
+
+            img {
+              opacity: 0.5;
+              transition: all 0.3s ease-in-out;
+
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+
+      .swiper-pagination {
+        span {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+}
+
+// Finish Styling The Clients Swiper Section
+
+// Start Styling The Pricing Section
+.pricing {
+  background-color: $light-green;
+  padding: 60px 0;
+
+  .pricing-boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .pricing-box {
+      flex-basis: 95%;
+      position: relative;
+      text-align: center;
+      padding: 40px 0;
+      margin-bottom: 50px;
+      background-color: $white;
+      box-shadow: 0 3px 0px 0 rgba(65, 62, 102, 0.08);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+
+        .blue-line {
+          width: 100%;
+        }
+      }
+
+      .blue-line {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        height: 5px;
+        width: 0;
+        display: block;
+        transition: all 0.5s ease-in-out;
+        background-color: $blue;
+      }
+
+      .price {
+        font-size: 64px;
+        color: $dark-blue;
+
+        sup {
+          font-size: 30px;
+        }
+
+        span {
+          color: $dark-blue6;
+          font-size: 16px;
+        }
+      }
+
+      .title {
+        font-size: 24px;
+        color: $dark-blue;
+        line-height: 1.5em;
+      }
+
+      ul {
+        margin: 20px 0 10px;
+
+        li {
+          font-weight: 300;
+          font-size: 16px;
+          color: $dark-blue3;
+          line-height: 1.5em;
+          padding: 5px 0;
+        }
+      }
+
+      a {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 10px 24px;
+        letter-spacing: 1px;
+        border-radius: 3px;
+        display: inline-block;
+        background-color: $blue;
+        color: $white;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $blue2;
+        }
+
+        &:focus {
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+        }
+      }
+
+      @media (min-width: 576px) {
+        flex-basis: 70%;
+      }
+
+      @media (min-width: 768px) {
+        flex-basis: 55%;
+      }
+
+      @media (min-width: 992px) {
+        flex-basis: 31%;
+        margin-bottom: 0;
+      }
+    }
+
+    @media (min-width: 992px) {
+      justify-content: space-between;
+    }
+  }
+}
+
+// Finish Styling The Pricing Section
+// Start Styling The Frequently Section
+.frequently {
+  padding: 60px 0;
+
+  .frequently-boxs {
+    .frequently-box {
+      &:not(:last-of-type) {
+        border-bottom: 1px solid $light-gray3;
+      }
+
+      .frequently-box-link {
+        a {
+          display: flex;
+          justify-content: space-between;
+          color: $black4;
+          font-size: 18px;
+          padding: 20px 0;
+          line-height: 1.5em;
+          transition: all 0.5s ease-in-out;
+
+          svg {
+            width: 45px;
+          }
+
+          &.active {
+            color: $blue;
+          }
+
+          @media (min-width: 768px) {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .frequently-box-text {
+        margin-bottom: 20px;
+        display: none;
+
+        p {
+          font-size: 16px;
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+// Finish Styling The Frequently Section

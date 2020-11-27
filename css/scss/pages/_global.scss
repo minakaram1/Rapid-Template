@@ -1,0 +1,145 @@
+// Start Global Style For The Whole Website 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+
+  font: {
+    size: 14px;
+    family: 'Montserrat', sans-serif;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 38, 70, 0.9);
+  display: none;
+}
+
+.mobile-nav{
+  overflow-y: hidden;
+}
+.title{
+  h2{
+    text-align: center;
+    font-size: 36px;
+    color: $dark-blue3;
+    margin-bottom: 20px;
+  }
+  p{
+    color: $dark-blue;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0 auto 60px;
+    width: 95%;
+    @media (min-width: 768px) {
+      width: 60%;
+    }
+    @media (min-width: 992px) {
+      width: 50%;
+    }
+  }
+}
+.go-to-top {
+  position: fixed;
+  z-index: 4;
+  right: 30px;
+  bottom: 30px;
+  display: none;
+
+  a {
+    display: block;
+    font-size: 16px;
+    color: $white;
+    background-color: $blue;
+    text-align: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    padding-top: 13px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: $blue2;
+    }
+  }
+}
+
+.preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 6;
+  overflow: hidden;
+  background: $white;
+  &::before{
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid $light-green3;
+    border-top: 6px solid $blue;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: preloader 1s linear infinite;
+  }
+
+  @keyframes preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+}
+// Finish Global Style For The Whole Website 
